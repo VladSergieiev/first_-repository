@@ -72,7 +72,6 @@ WHERE true
     AND (oo.persisted_campaign_id <> 22148 OR oo.persisted_campaign_id IS NULL)
   and date(oo.created_at) >= '2023-01-01'
     and date(oo.created_at) < '2023-05-01'
-    --and s.gk_name = 'Дельта Текс ТОВ'
 group by 1, 2, 3, 4, 5, 6, 7, 8, bi.campaign_id
 )
 
